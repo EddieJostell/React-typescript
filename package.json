@@ -1,0 +1,25 @@
+{
+  "name": "React-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/EddieJostell/React-typescript.git",
+  "author": "Eddie <eddie.jostell@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "webpack"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.15",
+    "@types/react-dom": "^16.0.8",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "typescript": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
