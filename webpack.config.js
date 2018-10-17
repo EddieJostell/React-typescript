@@ -10,10 +10,14 @@ var config = {
         extensions: [".ts", ".tsx", ".js"]
     },
 
+    // devServer: {
+    //     host: "react-test.local",
+    //     port: 8080,
+    // },
     module: {
         rules: [
             {
-                test: /\.m?js$/,
+                test: /\.tsx$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',

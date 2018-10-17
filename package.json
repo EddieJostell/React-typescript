@@ -6,9 +6,13 @@
   "author": "Eddie <eddie.jostell@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "bundle": "webpack"
+    "bundle": "webpack",
+    "start": "webpack-dev-server"
   },
   "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
     "@types/react": "^16.4.15",
     "@types/react-dom": "^16.0.8",
     "react": "^16.5.2",
