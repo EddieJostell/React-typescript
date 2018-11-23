@@ -10,10 +10,10 @@ var config = {
         extensions: [".ts", ".tsx", ".js"]
     },
 
-    // devServer: {
-    //     host: "react-test.local",
-    //     port: 8080,
-    // },
+    devServer: {
+        
+        port: 3000,
+    },
     module: {
         rules: [
             {
