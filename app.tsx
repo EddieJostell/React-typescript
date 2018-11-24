@@ -1,8 +1,8 @@
 
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Hello from "./src/components/Hello/Hello";
+import Navigation from "./src/components/Navigation/Navigation";
 ReactDOM.render(
-<Hello />,
+<Navigation name="Daniel" status="Is a midget"  />,
   document.getElementById("root")
 );
