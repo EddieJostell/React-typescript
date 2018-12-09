@@ -9,7 +9,14 @@ export interface NavigationProps {
 export default class Component extends React.Component<NavigationProps> {
     render() {
         return <div>
-            <span className="hello"> {this.props.name} {this.props.status}</span>
+            <div className="topMenu">
+                <div>
+                    <span>{this.props.name}</span>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
           </div>;
     }
  };
