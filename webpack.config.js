@@ -3,7 +3,7 @@ const env = process.env.NODE_ENV;
 var path = require("path");
 var config = {
     mode: "production",
-    entry: ["./app.tsx"],
+    entry: ["@babel/polyfill","./app.tsx"],
     output: {
         path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
@@ -34,7 +34,7 @@ var config = {
             {
                 test: /\.less$/,
                 use: [
-                    { loader: env == "development" ? "style-loader" : MiniCssExtractPlugin.loader, options: { sourceMap: true } },
+                    { loader: env == "development" ? "style-loader" : MiniCssExtractPlugin.loader, options: { sourceMap: true, filename: "main.css" } },
                     { loader: "css-loader", options: { sourceMap: true, importLoaders: 1 } },
                     { loader: "postcss-loader", options: { sourceMap: true, config: { path: __dirname + "/postcss.config.js" } } },
                     { loader: "less-loader", options: { sourceMap: true } }

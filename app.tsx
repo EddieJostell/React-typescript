@@ -1,8 +1,10 @@
 
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Navigation from "./src/components/Navigation/Navigation";
+import App from "./src/App";
+
+
 ReactDOM.render(
-<Navigation name="Edward 'Eddie' Jostell" status="IS THE BEST AROUND!!!"  />,
+<App  />,
   document.getElementById("root")
 );
