@@ -4,6 +4,6 @@ import "./styles/app.less";
 
 export default class App extends React.Component {
     render() {
-        return <Navigation name="Edward 'Eddie' Jostell" status="HEJ"/>;
+        return <Navigation name="Edward 'Eddie' Jostell" status=""/>;
     };
 }

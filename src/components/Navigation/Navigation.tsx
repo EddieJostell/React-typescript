@@ -7,7 +7,8 @@ import "./Navigation.less";
 }
 
 interface State {
-    hej: string
+    hamburger: string,
+    
 }
 
 export default class Navigation extends React.Component<Props, State> {
@@ -21,7 +22,8 @@ export default class Navigation extends React.Component<Props, State> {
         super(props);
 
         this.state = {
-            hej: "123"
+            hamburger: "123",
+           
         }
     }
    
@@ -33,8 +35,8 @@ export default class Navigation extends React.Component<Props, State> {
                 <span>{this.props.name}</span>
               </div>
               <div>
-                <span>{this.props.status}</span>
-                    <span>{this.state.hej}</span>
+                <img className="menu" src="../../../Icons/menu.svg"/>
+                <img className="cross" src="../../../Icons/x.svg" />
               </div>
             </div>
           </div>;
