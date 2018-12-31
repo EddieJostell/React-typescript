@@ -30,11 +30,11 @@ export default class Navigation extends React.Component<Props, State> {
 
     render() {
         return <div>
-            <div className="topMenu">
-              <div>
+            <div className="Navbar">
+              <div className="Navbar-left">
                 <span>{this.props.name}</span>
               </div>
-              <div>
+              <div className="Navbar-right">
                 <img className="menu" src="../../../Icons/menu.svg"/>
                 <img className="cross" src="../../../Icons/x.svg" />
               </div>
