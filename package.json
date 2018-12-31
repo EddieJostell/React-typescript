@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "bundle": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open chrome"
   },
   "dependencies": {
     "@babel/cli": "^7.1.2",
