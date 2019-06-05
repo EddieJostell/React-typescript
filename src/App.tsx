@@ -4,18 +4,31 @@ import Container from "./components/Container/Container";
 import About from "./components/About/About";
 import "./styles/app.less";
 
-export default class App extends React.Component {
-  state = {
-    showHamburger: false,
-    showCross: false
+interface State {
+  navIsOpen: boolean
+}
+
+export default class App extends React.Component<{}, State> {
+  state: State = {
+    navIsOpen: false
   };
 
+  toggleNav = (visible: boolean) => {
+    this.setState({ navIsOpen: visible })
+  }
+
   render() {
+    const { navIsOpen } = this.state
+
     return (
       <div>
-        <Navigation name="Edward 'Eddie' Jostell" />
+        <Navigation
+          navIsOpen={navIsOpen}
+          toggleNav={this.toggleNav}
+          name="Edward 'Eddie' Jostell"
+          />
         <Container>
-           <About/>
+          <About />
         </Container>
       </div>
     );
