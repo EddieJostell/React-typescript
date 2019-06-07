@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Container.less";
 
 function Container(props: { children: React.ReactNode; }) {
     return(

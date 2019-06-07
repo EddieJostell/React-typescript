@@ -21,12 +21,12 @@ export default class App extends React.Component<{}, State> {
     const { navIsOpen } = this.state
 
     return (
-      <div>
+      <div className="App">
         <Navigation
           navIsOpen={navIsOpen}
           toggleNav={this.toggleNav}
           name="Edward 'Eddie' Jostell"
-          />
+        />
         <Container>
           <About />
         </Container>
