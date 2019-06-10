@@ -15,24 +15,15 @@ export default class About extends React.Component<Props, State> {
 
   render() {
     return (
-      <div className="About">
-        <div className="About-top">
-          <div>
-            <span>WELCOME TO MY PLACE!</span>
-            <span>This is my personal page is about me and what I do.</span>
-          </div>
-
-          <div className="">
+      <div className="About">    
+        <div className="d-flex justify-content-center">
+          <div className="Top col-6">
             <span>ABOUT ME!</span>
             <span>QUOTE</span>
           </div>
         </div>
-
-        <div className="About-bottom">
-          <div>
-            <span>INFO TITLE</span>
-          </div>
-          <div>
+        <div className="d-flex justify-content-center">
+          <div className="Bot col-6">
             <div>INFO 1</div>
             <div>INFO 2</div>
             <div>INFO 3</div>

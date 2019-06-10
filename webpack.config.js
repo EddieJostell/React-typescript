@@ -6,14 +6,16 @@ var config = {
   entry: ["@babel/polyfill", "./app.tsx"],
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: "/"
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", "json", "wasm"]
   },
 
   devServer: {
-    port: 3000
+    port: 3000,
+    historyApiFallback: true
   },
   plugins: [new MiniCssExtractPlugin()],
   module: {
