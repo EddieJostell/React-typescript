@@ -4,8 +4,8 @@ html {
 
 body {
     height: 100%;
-    //background: no-repeat;
-    //background-image: url(../../img/E.jpg);
+    background: no-repeat center;
+    background-image: url(../../img/E.jpg);
 }
 
 * {
@@ -15,11 +15,19 @@ body {
 }
 
 .App {
-    height: 100%;
-    background-color: black;
+    padding: 10px;
+    //background-color: black;
+
+    @media (min-width: 1025px) {
+        height: 100%;
+        padding: 0;
+    }
 }
 
 #root {
-    height: 100%;
     background-color: black;
+
+    @media (min-width: 1025px) {
+        height: 100%;
+    }
 }

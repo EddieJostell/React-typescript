@@ -74,7 +74,13 @@ export default class Navigation extends React.Component<Props, State> {
                 </Link>
               </li>
               <li>
-                <Link to={"/Contact"}> CONTACT </Link>
+                <Link
+                  to={"/Contact"}
+                  onClick={() => this.props.toggleNav(false)}
+                >
+                  {" "}
+                  CONTACT{" "}
+                </Link>
               </li>
             </div>
           </div>
