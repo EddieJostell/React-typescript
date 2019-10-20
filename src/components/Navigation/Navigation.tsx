@@ -33,53 +33,53 @@ export default class Navigation extends React.Component<Props, State> {
 
   render() {
     return (
-        <div className="Navbar">
-          <div className="Navbar-name">
-            <a>{this.props.name}</a>
-          </div>
-          <div className="Navbar-menu">
-            {this.props.navIsOpen ? (
-              <div onClick={() => this.props.toggleNav(false)}>
-                <img className="cross" src="../../../Icons/x.svg" />
-              </div>
-            ) : (
-              <div onClick={() => this.props.toggleNav(true)}>
-                <img className="menu" src="../../../Icons/menu.svg" />
-              </div>
-            )}
-          </div>
-
-          {this.props.navIsOpen && (
-            <div className="Navbar-subnav">
-              <div className="Navbar-subnavItems">
-                <li>
-                  <Link
-                    to={"/"}
-                    onClick={() => this.props.toggleNav(false)}
-                  >
-                    {" "}
-                    HOME{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={"/About"}
-                    onClick={() => this.props.toggleNav(false)}
-                  >
-                    {" "}
-                    ABOUT{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/Portfolio"}> PORTFOLIO </Link>
-                </li>
-                <li>
-                  <Link to={"/Contact"}> CONTACT </Link>
-                </li>
-              </div>
+      <div className="Navbar">
+        <div className="Navbar-name">
+          <a>{this.props.name}</a>
+        </div>
+        <div className="Navbar-menu">
+          {this.props.navIsOpen ? (
+            <div onClick={() => this.props.toggleNav(false)}>
+              <img className="cross" src="../../../Icons/x.svg" />
+            </div>
+          ) : (
+            <div onClick={() => this.props.toggleNav(true)}>
+              <img className="menu" src="../../../Icons/menu.svg" />
             </div>
           )}
         </div>
+
+        {this.props.navIsOpen && (
+          <div className="Navbar-subnav">
+            <div className="Navbar-subnavItems">
+              <li>
+                <Link to={"/"} onClick={() => this.props.toggleNav(false)}>
+                  {" "}
+                  HOME{" "}
+                </Link>
+              </li>
+              <li>
+                <Link to={"/About"} onClick={() => this.props.toggleNav(false)}>
+                  {" "}
+                  ABOUT{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/Portfolio"}
+                  onClick={() => this.props.toggleNav(false)}
+                >
+                  {" "}
+                  PORTFOLIO{" "}
+                </Link>
+              </li>
+              <li>
+                <Link to={"/Contact"}> CONTACT </Link>
+              </li>
+            </div>
+          </div>
+        )}
+      </div>
     );
   }
 }

@@ -10,6 +10,7 @@ import Container from "./components/Container/Container";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import "./styles/app.less";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 interface State {
   navIsOpen: boolean;
@@ -36,11 +37,9 @@ export default class App extends React.Component<{}, State> {
             name="Edward 'Eddie' Jostell"
           />
           <Container>
-            {/* <Home />
-            <About /> */}
               <Route exact path="/" component={Home} />
               <Route path="/About" component={About} />
-
+              <Route path="/Portfolio" component={Portfolio} />
           </Container>
         </div>
       </Router>

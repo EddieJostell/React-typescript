@@ -15,10 +15,10 @@ export default class Home extends React.Component<Props, State> {
   render() {
     return (
       <div className="Home">
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center align-items-center">
           <div className="Home-content col-6">
             <span className="Home-contentTitle">WELCOME TO MY PLACE!</span>
-            <span className="Home-contentText">This is my personal page is about me and what I do.</span>
+            <span className="Home-contentText">This is my info and portfolio page. Created with React.js | Typescript | LESS.</span>
           </div>
         </div>
       </div>
