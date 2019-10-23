@@ -12,15 +12,22 @@ import Home from "./components/Home/Home";
 import "./styles/app.less";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
+const portData = require('./info.json');
 
 interface State {
   navIsOpen: boolean;
+  portfolioContent: [];
 }
 
 export default class App extends React.Component<{}, State> {
   state: State = {
-    navIsOpen: false
+    navIsOpen: false,
+    portfolioContent: [],
   };
+
+  componentDidMount() {
+    this.setState({portfolio: portData})
+  }
 
   toggleNav = (visible: boolean) => {
     this.setState({ navIsOpen: visible });
@@ -28,6 +35,8 @@ export default class App extends React.Component<{}, State> {
 
   render() {
     const { navIsOpen } = this.state;
+
+    // const portCont = this.state.portfolioContent.map()
 
     return (
       <Router>

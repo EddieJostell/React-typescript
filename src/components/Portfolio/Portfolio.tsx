@@ -20,9 +20,10 @@ export default class Portfolio extends React.Component<Props, State> {
               <li className="List-card">
                   <h3>CLOUD 9 REBORN</h3>
                   <span>
-                    Firt ever page I have made with HTML, CSS/SASS, JAVASCRIPT/JQUERY.
+                    Made up homepage for the Cloud9 CSGO team from 2016 to 2017.
                   </span>
-                  <span>Link:</span>
+                  <span>#HTML #CSS/SASS #Javascript</span>
+                  <a href=""><span>View project</span></a>
               </li>
               <li className="List-card">TODO</li>
               <li className="List-card">FOOD-APP</li>

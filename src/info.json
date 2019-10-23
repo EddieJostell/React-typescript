@@ -1,0 +1,40 @@
+{
+    "portfolio": [
+        {
+            "id": 1,
+            "title": "COOP.se",          
+            "tech": "#HTML #CSS/LESS #jQuery #TypeScript #ASP.NET/MVC #EPiServer",
+            "link": "https://www.coop.se"
+        },
+        {        
+            "id": 2,
+            "title": "Cloud9 Reborn",        
+            "tech": "#HTML #CSS/SASS #JavaScript/jQuery #AJAX",
+            "link": "https://eddiejostell.github.io/Cloud9-Reborn/"
+        },
+        {
+            "id": 3,
+            "title": "News Hub",
+            "tech": "#HTML #CSS/SASS #JavaScript/jQuery #AJAX",
+            "link": "https://eddiejostell.github.io/New-Hub/"
+        },
+        {
+            "id": 4,
+            "title": "MovieDatabase",
+            "tech": "#HTML #CSS/SASS #JavaScript",
+            "link": "https://eddiejostell.github.io/MovieDatabase/"
+        },
+        {
+            "id": 5,
+            "title": "",
+            "tech": "",
+            "link": ""
+        },
+        {
+            "id": 6,
+            "title": "",
+            "tech": "",
+            "link": ""
+        }
+    ]
+}
