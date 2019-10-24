@@ -3,8 +3,8 @@ import "../../Portfolio/Portfolio.less";
 
 function PortfolioContent() {
   return (
-      <div>
+      <li>
 
-      </div>
+      </li>
   )
 }

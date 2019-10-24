@@ -26,7 +26,8 @@ export default class App extends React.Component<{}, State> {
   };
 
   componentDidMount() {
-    this.setState({portfolio: portData})
+    this.setState({portfolioContent : portData})
+    console.log(portData);
   }
 
   toggleNav = (visible: boolean) => {
@@ -35,7 +36,6 @@ export default class App extends React.Component<{}, State> {
 
   render() {
     const { navIsOpen } = this.state;
-
     // const portCont = this.state.portfolioContent.map()
 
     return (
