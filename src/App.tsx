@@ -12,7 +12,7 @@ import Home from "./components/Home/Home";
 import "./styles/app.less";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
-const portData = require('./info.json');
+const portData = require('./portfolio.json');
 
 interface State {
   navIsOpen: boolean;
