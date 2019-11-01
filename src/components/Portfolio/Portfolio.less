@@ -1,25 +1,52 @@
-
 .Portfolio {
-    width: 100%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    //border: 1px solid red;
-    color: #FF7A2D;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  //border: 1px solid red;
+  color: #ff4b3e;
 
-    .List {
-        list-style-type: none;
-        max-width: 600px;
+  .List {
+    list-style-type: none;
+    max-width: 800px;
 
-        &-card {
-            border: 1px solid white;
-            min-width: 300px;
-            display: flex;
-            flex-direction: column;
+    &-card {
+      border: 1px solid white;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
 
+      @media (min-width: 600px) {
+        flex-direction: row;
+      }
+
+      a:visited,
+      :active,
+      :link {
+        color: #ff4b3e;
+        text-decoration: none;
+      }
+
+      &Img {
+        img {
+          width: 200px;
+          height: 200px;
+
+          &:hover {
+              width: 300px;
+              height:300px;
+          }
         }
+      }
+
+      &Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
     }
+  }
 }

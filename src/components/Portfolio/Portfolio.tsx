@@ -1,56 +1,47 @@
 import * as React from "react";
 import "./Portfolio.less";
 import PortfolioContent from "./PortfolioContent/PortfolioContent";
+import { PortfolioItem } from "../../portfolio";
 
-interface Props {
-  data: [];
-  title: string;
-  tech: string;
-  id: number;
-  link: string;
+
+interface Props { 
+  data: PortfolioItem[];
+ 
 }
 
-interface State {}
+interface State {
+  portArray: any[];
+  
+}
 
 export default class Portfolio extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      portArray: [],
+    };
   }
 
-  // componentDidMount() {
-  //   this.setState({ portfolio: data })
-  // }
+ componentDidMount() {
+  this.setState({ portArray : this.props.data })
+ }
+
   render() {
-    //const { data } = this.props;
-    console.log(this.props.data, "ASDF");
-    const portfolio = this.props.data.map((port, key) => <PortfolioContent 
-   
+    const { portArray } = this.state;
+  
+    const portfolio = portArray.map((port, key) => <PortfolioContent 
+      key={key}
+      title={port.title}
+      tech={port.tech}
+      link={port.link}
+      img={port.img}
     />);
 
     return (
       <div className="Portfolio">
         <h1>PROJECTS</h1>
-        <ul className="List">
-          <li className="List-card">
-            <h3>CLOUD 9 REBORN</h3>
-            <span>
-              Made up homepage for the Cloud9 CSGO team from 2016 to 2017.
-            </span>
-            <span>#HTML #CSS/SASS #Javascript</span>
-            <a href="">
-              <span>View project</span>
-            </a>
-          </li>
-          <li className="List-card">TODO</li>
-          <li className="List-card">FOOD-APP</li>
-          <li className="List-card">NEWS HUB</li>
-          <li className="List-card">MOVIEDATABASE</li>
-          <li className="List-card">FOOD-APP</li>
-          <li className="List-card">FOOD-APP</li>
-          <li className="List-card">FOOD-APP</li>
-        </ul>
+        {portfolio }
       </div>
     );
   }

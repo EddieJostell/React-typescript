@@ -26,14 +26,14 @@
         },
         {
             "id": 5,
-            "title": "",
-            "tech": "",
-            "link": ""
+            "title": "TODO-APP",
+            "tech": "#HTML #CSS #JavaScript",
+            "link": "https://eddiejostell.github.io/todo-app/"
         },
         {
             "id": 6,
-            "title": "",
-            "tech": "",
-            "link": ""
+            "title": "FOOD-APP",
+            "tech": "#HTML #CSS #JavaScript",
+            "link": "https://eddiejostell.github.io/food-app/"
         }
     ]
