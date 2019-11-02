@@ -1,6 +1,6 @@
 .Contact {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,4 +8,22 @@
     padding-right: 20px;
     border: 1px solid red;
     color: white;
+
+    @media (min-width: 1025px) {
+        height: ~"calc(100vh - 77px)";
+    }
+
+    .List {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &-items {
+             border: 1px solid white;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+        }
+    }
 }

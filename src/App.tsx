@@ -12,17 +12,19 @@ import Home from "./components/Home/Home";
 import "./styles/app.less";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
-import { myProjects, PortfolioItem} from "./portfolio";
+import { myProjects, PortfolioItem, contactInfo, ContactItem} from "./portfolio";
 
 interface State {
   navIsOpen: boolean;
   portCont: PortfolioItem[];
+  contInf: ContactItem[];
 }
 
 export default class App extends React.Component<State> {
   state: State = {
     navIsOpen: false,
     portCont: myProjects,
+    contInf: contactInfo,
   };
 
   toggleNav = (visible: boolean) => {
@@ -32,6 +34,7 @@ export default class App extends React.Component<State> {
   render() {
     const { navIsOpen } = this.state;
     const { portCont } = this.state;
+    const { contInf } = this.state;
   
     return (
       <Router>
@@ -45,7 +48,7 @@ export default class App extends React.Component<State> {
               <Route exact path="/" component={Home} />
               <Route path="/About" component={About} />
               <Route path="/Portfolio" render={() => <Portfolio data={portCont} />} />
-              <Route path="/Contact"  compontent={Contact}/>
+              <Route path="/Contact"  render={() => <Contact contact={contInf} />}/>
           </Container>
         </div>
       </Router>

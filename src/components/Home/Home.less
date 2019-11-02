@@ -1,8 +1,11 @@
 .Home {
   width: 100%;
   position: relative;
-  height: 100vh;
-  //border: 1px solid red;
+  height: 100%;
+ 
+  @media (min-width: 600px) {
+    height: ~"calc(100vh - 77px)";
+  }
 
   &-content {
     color: white;

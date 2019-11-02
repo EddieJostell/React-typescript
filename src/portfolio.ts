@@ -10,7 +10,7 @@ export const myProjects: PortfolioItem[] = [
   {
     id: 1,
     title: "COOP.se",
-    tech: "#HTML #CSS/LESS #jQuery #TypeScript http://ASP.NET/MVC #EPiServer",
+    tech: "#HTML #CSS/LESS #jQuery #TypeScript #ASP.NET/MVC #EPiServer",
     link: "https://www.coop.se",
     img: "img/coop.JPG"
   },
@@ -50,3 +50,42 @@ export const myProjects: PortfolioItem[] = [
     img: "img/food-app.JPG"
   }
 ];
+
+export interface ContactItem {
+  id: number;
+  medium: string;
+  link: string;
+  img: string;
+
+}
+
+export const contactInfo: ContactItem[] = [
+  {
+  id: 1,
+  medium: "Phone number",
+  link: "+46 73 026 30 92",
+  img: "",
+ 
+},
+{
+  id: 2,
+  medium: "Github",
+  link: "https://github.com/EddieJostell",
+  img: "",
+},
+{
+  id: 3,
+  medium: "Email",
+  link: "eddie.jostell@gmail.com",
+  img: "",
+},
+{
+  id: 4,
+  medium: "LinkedIn",
+  link: "img/linkedin_qr.jpg",
+  img: "",
+}
+];
+
+
+
