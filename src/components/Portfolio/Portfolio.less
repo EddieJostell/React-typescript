@@ -8,6 +8,7 @@
   padding-right: 20px;
   //border: 1px solid red;
   color: #ff4b3e;
+ 
 
   .List {
     margin-top: 20px;
@@ -23,6 +24,7 @@
       min-width: 300px;
       display: flex;
       flex-direction: column;
+      
 
       @media (min-width: 600px) {
         flex-direction: row;
@@ -39,20 +41,51 @@
       }
 
       &Img {
-        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         img {
-          max-width: 320px;
-          max-height: 300px;
+          max-width: 300px;
+          max-height: 300px;       
+        }
 
-         
+        @media (min-width: 600px) {
+          margin-right: 5px;
+        }
+       .title {
+          text-align: center;
+          @media (min-width: 600px) {
+            display: none;
+          }
         }
       }
 
       &Content {
-        margin-left: 5px;
+       
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 600px) {
+          align-items: flex-start;
+          margin-left: 5px;
+        }
+
+        span {
+          text-align: center;
+          @media (min-width: 600px) {
+            text-align: left;
+          }
+        }
+
+        .title {
+          display: none;
+          @media (min-width: 600px) {
+            display: flex;
+          }
+        }
+        
       }
     }
   }
