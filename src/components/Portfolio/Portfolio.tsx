@@ -3,15 +3,12 @@ import "./Portfolio.less";
 import PortfolioContent from "./PortfolioContent/PortfolioContent";
 import { PortfolioItem } from "../../portfolio";
 
-
-interface Props { 
+interface Props {
   data: PortfolioItem[];
- 
 }
 
 interface State {
-  portArray: any[];
-  
+  portArray: PortfolioItem[];
 }
 
 export default class Portfolio extends React.Component<Props, State> {
@@ -19,29 +16,31 @@ export default class Portfolio extends React.Component<Props, State> {
     super(props);
 
     this.state = {
-      portArray: [],
+      portArray: []
     };
   }
 
- componentDidMount() {
-  this.setState({ portArray : this.props.data })
- }
+  componentDidMount() {
+    this.setState({ portArray: this.props.data });
+  }
 
   render() {
     const { portArray } = this.state;
-  
-    const portfolio = portArray.map((port, key) => <PortfolioContent 
-      key={key}
-      title={port.title}
-      tech={port.tech}
-      link={port.link}
-      img={port.img}
-    />);
+
+    const portfolio = portArray.map((port, key) => (
+      <PortfolioContent
+        key={key}
+        title={port.title}
+        tech={port.tech}
+        link={port.link}
+        img={port.img}
+      />
+    ));
 
     return (
       <div className="Portfolio">
-        <h1>PROJECTS</h1>
-        {portfolio }
+        <h1>PROJECTS</h1>     
+          <ul className="List">{portfolio}</ul>       
       </div>
     );
   }
