@@ -2,6 +2,7 @@ import * as React from "react";
 import "./Contact.less";
 import { ContactItem } from "../../portfolio";
 
+
 interface Props {
   contact: ContactItem[];
 }

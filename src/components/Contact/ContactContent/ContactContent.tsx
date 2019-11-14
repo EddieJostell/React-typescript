@@ -1,7 +1,19 @@
 import * as React from "react";
 import "../../Contact/Contact.less";
+import { useState } from 'react';
 
-function ContactContent(props: any) {
+interface Props {
+
+}
+
+function ContactContent(props: Props) {
+
+const [cont, contactInfo] = useState([])
+
+const getContactInfo = () => {
+
+}
+
   return (
     <ul className="List">
     <li className="List-items">
