@@ -69,20 +69,20 @@ export const contactInfo: ContactItem[] = [
 },
 {
   id: 2,
-  medium: "Github",
-  link: "https://github.com/EddieJostell",
-  img: "",
-},
-{
-  id: 3,
   medium: "Email",
   link: "eddie.jostell@gmail.com",
   img: "",
 },
 {
-  id: 4,
+  id: 3,
   medium: "LinkedIn",
-  link: "img/linkedin_qr.jpg",
+  link: "https://www.linkedin.com/in/eddiejostell",
+  img: "",
+},
+{
+  id: 4,
+  medium: "Github",
+  link: "https://github.com/EddieJostell",
   img: "",
 }
 ];

@@ -5,14 +5,10 @@ interface Props {}
 
 interface State {}
 
-export default class About extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
+const About = () => {
+ //Will try hooks here.
 
-    this.state = {};
-  }
-
-  render() {
+  
     return (
       <div className="About">
         <div className="Top">
@@ -64,5 +60,7 @@ export default class About extends React.Component<Props, State> {
         </div>
       </div>
     );
-  }
+  
 }
+
+export default About;

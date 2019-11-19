@@ -1,34 +1,22 @@
 import * as React from "react";
 import "../../Contact/Contact.less";
-import { useState } from 'react';
 
 interface Props {
-
+  medium: string;
+  link: string;
+  img: string;
 }
 
-function ContactContent(props: Props) {
-
-const [cont, contactInfo] = useState([])
-
-const getContactInfo = () => {
-
-}
-
+const ContactContent = (props: Props) => {
   return (
-    <ul className="List">
     <li className="List-items">
       <div className="">
-      <img src=""/>
+        <img src={props.img} />
       </div>
-      <div className="">
-      <h3></h3>
-        <span></span>
-        <a href="" target="_blank"><span>View project</span></a>
-      </div>
-       
+      <h3>{props.medium}</h3>
+     <span>{props.link}</span>
     </li>
-</ul>
-  )
-}
+  );
+};
 
 export default ContactContent;

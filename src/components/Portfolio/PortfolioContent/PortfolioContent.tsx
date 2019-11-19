@@ -8,7 +8,7 @@ interface Props {
   tech: string;
 }
 
-function PortfolioContent(props: Props) {
+const PortfolioContent = (props: Props) => {
   return (
     <li className="List-card">
       <div className="List-cardImg">
