@@ -51,43 +51,6 @@ export const myProjects: PortfolioItem[] = [
   }
 ];
 
-export interface ContactItem {
-  id: number;
-  medium: string;
-  link: string;
-  img: string;
-
-}
-
-export const contactInfo: ContactItem[] = [
-  {
-  id: 1,
-  medium: "Phone number",
-  link: "+46 73 026 30 92",
-  img: "",
- 
-},
-{
-  id: 2,
-  medium: "Email",
-  link: "eddie.jostell@gmail.com",
-  img: "",
-},
-{
-  id: 3,
-  medium: "LinkedIn",
-  link: "https://www.linkedin.com/in/eddiejostell",
-  img: "",
-},
-{
-  id: 4,
-  medium: "Github",
-  link: "https://github.com/EddieJostell",
-  img: "",
-}
-];
-
-
 export interface QuoteItem {
   id: number;
   quote: string;

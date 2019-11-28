@@ -12,19 +12,17 @@ import Home from "./components/Home/Home";
 import "./styles/app.less";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
-import { myProjects, PortfolioItem, contactInfo, ContactItem} from "./portfolio";
+import { myProjects, PortfolioItem} from "./portfolio";
 
 interface State {
   navIsOpen: boolean;
   portCont: PortfolioItem[];
-  contInf: ContactItem[];
 }
 
 export default class App extends React.Component<State> {
   state: State = {
     navIsOpen: false,
     portCont: myProjects,
-    contInf: contactInfo,
   };
 
   toggleNav = (visible: boolean) => {
@@ -33,9 +31,8 @@ export default class App extends React.Component<State> {
 
   render() {
     const { navIsOpen } = this.state;
-    const { portCont } = this.state;
-    const { contInf } = this.state;
-  
+    const { portCont } = this.state;  
+
     return (
       <Router>
         <div className="App">
@@ -48,7 +45,7 @@ export default class App extends React.Component<State> {
               <Route exact path="/" component={Home} />
               <Route path="/About" component={About} />
               <Route path="/Portfolio" render={() => <Portfolio data={portCont} />} />
-              <Route path="/Contact"  render={() => <Contact contact={contInf} />}/>
+              <Route path="/Contact"  render={() => <Contact />}/>
           </Container>
         </div>
       </Router>
@@ -58,3 +55,6 @@ export default class App extends React.Component<State> {
 
 //https://coolors.co/000000-000a1c-13211a-44001d-ffffff
 //https://coolors.co/44355b-31263e-221e22-ff4b3e-eca72c
+
+//https://coolors.co/f26326-000000-ffffff-4a5664-fc0000
+//https://coolors.co/a30002-000000-eaeaea-466365-274060
