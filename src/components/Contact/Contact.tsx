@@ -1,6 +1,5 @@
 import * as React from "react";
 import "./Contact.less";
-import { ContactItem } from "../../portfolio";
 import ContactContent from "./ContactContent/ContactContent";
 
 
@@ -22,10 +21,6 @@ export default class Contact extends React.Component<Props, State> {
   }
 
   render() {
-  
-
-   
-
     return (
       <div className="Contact">
           <h1>CONTACT ME</h1>

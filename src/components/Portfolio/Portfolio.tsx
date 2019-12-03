@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Portfolio.less";
 import PortfolioContent from "./PortfolioContent/PortfolioContent";
-import { PortfolioItem } from "../../portfolio";
+import { PortfolioItem } from "../../utils/portfolio";
 
 interface Props {
   data: PortfolioItem[];
