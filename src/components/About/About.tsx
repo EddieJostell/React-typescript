@@ -1,18 +1,25 @@
 import * as React from "react";
 import "./About.less";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import QuoteContext from "../../utils/HelperContext";
 import QuoteContent from "./QuoteContent/QuoteContent";
+import { QuoteItem } from "../../utils/portfolio";
 
 interface Props {}
 
-interface State {}
+interface State {
+ 
+}
 
 const About = () => {
   //Will try hooks here.
 
   const Quote = useContext(QuoteContext);
-  console.log(Quote);
+  console.log("useContext", Quote);
+
+  const [quoteList, setQuoteList] = useState(Quote);
+  console.log("useState", quoteList);
+  
 
   return (
     <div className="About">
@@ -60,6 +67,8 @@ const About = () => {
                <QuoteContent key={key} quote={q.quote} author={q.author}/>
               ))
             : null}
+
+        
           
           {/*    <div>
             "Reality can never live up to that fantasy that you have in your
