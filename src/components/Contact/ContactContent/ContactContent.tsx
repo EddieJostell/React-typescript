@@ -14,7 +14,9 @@ const ContactContent = (props: Props) => {
       </li>
       <li className="List-items">
         <div className="">
-         <a href="mailto:eddie.jostell@gmail.com"><img src="Icons/mail.svg" /></a>
+          <a href="mailto:eddie.jostell@gmail.com">
+            <img src="Icons/mail.svg" />
+          </a>
         </div>
         <a href="mailto:eddie.jostell@gmail.com">
           <h3>Email</h3>
@@ -22,7 +24,9 @@ const ContactContent = (props: Props) => {
       </li>
       <li className="List-items">
         <div className="">
-         <a href="https://www.linkedin.com/in/eddiejostell" target="_blank"><img src="Icons/linkedin.svg" /></a>
+          <a href="https://www.linkedin.com/in/eddiejostell" target="_blank">
+            <img src="Icons/linkedin.svg" />
+          </a>
         </div>
         <a href="https://www.linkedin.com/in/eddiejostell" target="_blank">
           <h3>LinkedIn</h3>
@@ -30,9 +34,11 @@ const ContactContent = (props: Props) => {
       </li>
       <li className="List-items">
         <div className="">
-         <a href="https://github.com/EddieJostell" target="_blank"><img src="Icons/github.svg" /></a>
+          <a href="https://github.com/EddieJostell" target="_blank">
+            <img src="Icons/github.svg" />
+          </a>
         </div>
-        <a href="https://github.com/EddieJostell">
+        <a href="https://github.com/EddieJostell" target="_blank">
           <h3>Github</h3>
         </a>
       </li>

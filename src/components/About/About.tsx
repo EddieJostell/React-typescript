@@ -7,9 +7,7 @@ import { QuoteItem } from "../../utils/portfolio";
 
 interface Props {}
 
-interface State {
- 
-}
+interface State {}
 
 const About = () => {
   //Will try hooks here.
@@ -19,7 +17,6 @@ const About = () => {
 
   const [quoteList, setQuoteList] = useState(Quote);
   console.log("useState", quoteList);
-  
 
   return (
     <div className="About">
@@ -62,14 +59,12 @@ const About = () => {
         </div>
         <div className="Bot-box">
           <h2>Quote</h2>
-         {(Quote instanceof Array)
+          {Quote instanceof Array
             ? Quote.map((q, key) => (
-               <QuoteContent key={key} quote={q.quote} author={q.author}/>
+                <QuoteContent key={key} quote={q.quote} author={q.author} />
               ))
             : null}
 
-        
-          
           {/*    <div>
             "Reality can never live up to that fantasy that you have in your
             head. You'll be much happier if you accept the fact that real life
@@ -82,3 +77,5 @@ const About = () => {
 };
 
 export default About;
+
+//https://stackoverflow.com/questions/42094060/changing-shuffling-text-every-1-5-second-in-a-react-component
