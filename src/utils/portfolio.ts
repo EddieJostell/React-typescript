@@ -57,15 +57,17 @@ export interface QuoteItem {
   author: string;
 }
 
-export const quoteInfo: QuoteItem[] = [
+export const QuoteInfo: QuoteItem[] = [
   {
     id: 1,
-    quote: "A tree falls in the forest, no one puts it on YouTube, did it ever really happen?",
-    author:"Bodhi Point Break 2015"
+    quote:
+      "A tree falls in the forest, no one puts it on YouTube, did it ever really happen?",
+    author: "Bodhi Point Break 2015"
   },
   {
     id: 2,
-    quote: "Reality can never live up to that fantasy that you have in your head. You'll be much happier if you accept the fact that real life is never perfect",
+    quote:
+      "Reality can never live up to that fantasy that you have in your head. You'll be much happier if you accept the fact that real life is never perfect",
     author: "Unknown"
   },
   {
@@ -75,7 +77,8 @@ export const quoteInfo: QuoteItem[] = [
   },
   {
     id: 4,
-    quote: "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.",
+    quote:
+      "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.",
     author: "Bruce Lee."
   },
   {
@@ -93,7 +96,4 @@ export const quoteInfo: QuoteItem[] = [
     quote: "I am become death, the destroyer of worlds.",
     author: "J. Robert Oppenheimer."
   }
-]
-
-
-
+];

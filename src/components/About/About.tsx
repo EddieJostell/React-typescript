@@ -5,11 +5,9 @@ import QuoteContext from "../../utils/HelperContext";
 import QuoteContent from "./QuoteContent/QuoteContent";
 import { QuoteItem } from "../../utils/portfolio";
 
-interface Props {}
+interface IAboutProps {}
 
-interface State {}
-
-const About = () => {
+const About = (props: IAboutProps) => {
   //Will try hooks here.
 
   const Quote = useContext(QuoteContext);
@@ -18,6 +16,12 @@ const About = () => {
   const [quoteList, setQuoteList] = useState(Quote);
   console.log("useState", quoteList);
 
+  /*   let robin: JSX.Element[] = quoteList.map((q: QuoteItem, key: any) => (
+    <QuoteContent key={key} quote={q.quote} author={q.author} />
+  ));
+
+  let hej: never[] = quoteList(Math.floor(Math.random() * quoteList.length));
+  console.log(hej); */
   return (
     <div className="About">
       <div className="Top">
@@ -60,11 +64,10 @@ const About = () => {
         <div className="Bot-box">
           <h2>Quote</h2>
           {Quote instanceof Array
-            ? Quote.map((q, key) => (
+            ? Quote.map((q: QuoteItem, key: any) => (
                 <QuoteContent key={key} quote={q.quote} author={q.author} />
               ))
             : null}
-
           {/*    <div>
             "Reality can never live up to that fantasy that you have in your
             head. You'll be much happier if you accept the fact that real life

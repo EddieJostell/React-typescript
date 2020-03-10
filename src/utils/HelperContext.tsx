@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { createContext } from "react";
 
-const QuoteContext = React.createContext({})
+export interface IContextProps {
+  state: IContextState;
+  children?: React.ReactNode;
+}
 
-export const QuoteProvider = QuoteContext.Provider
-export const QuoteConsumer = QuoteContext.Consumer
+export interface IQuoteValues {
+  id: number;
+  quote: string;
+  author: string;
+}
+
+export interface IContextState {
+  quoteItem?: IQuoteValues | never[];
+}
+
+//const quoteInformation: IContextState = {quoteItems: {id: }}
+
+export const QuoteContext = createContext([]);
+
+export const QuoteProvider = QuoteContext.Provider;
 
 export default QuoteContext;

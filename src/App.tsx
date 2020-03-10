@@ -9,20 +9,24 @@ import Portfolio from "./components/Portfolio/Portfolio";
 //import Route from "./utils/Route";
 import Contact from "./components/Contact/Contact";
 import { QuoteProvider } from "./utils/HelperContext";
-import { myProjects, PortfolioItem, QuoteItem, quoteInfo } from "./utils/portfolio";
+import {
+  myProjects,
+  PortfolioItem,
+  QuoteItem,
+  QuoteInfo
+} from "./utils/portfolio";
 
 interface State {
   navIsOpen: boolean;
   portCont: PortfolioItem[];
   quoteArr: QuoteItem[];
- 
 }
 
 export default class App extends React.Component<State> {
   state: State = {
     navIsOpen: false,
     portCont: myProjects,
-    quoteArr: quoteInfo,
+    quoteArr: QuoteInfo
   };
 
   toggleNav = (visible: boolean) => {
