@@ -22,6 +22,48 @@ interface State {
   quoteArr: QuoteItem[];
 }
 
+/* interface IAppProps {
+  navIsOpen: boolean;
+  portCont: PortfolioItem[];
+  quoteList: QuoteItem[];
+}
+
+function App(props: IAppProps) {
+  const { navIsOpen, portCont, quoteList } = props;
+  const [stateNavIsOpen, setNavState] = useState(navIsOpen);
+
+  const toggleNav = () => {
+    console.log("Before", stateNavIsOpen);
+    setNavState(!stateNavIsOpen);
+    console.log("After", stateNavIsOpen);
+  };
+
+  return (
+    <QuoteProvider value={quoteList}>
+      <Router>
+        <div className="App">
+          <Navigation
+            navIsOpen={stateNavIsOpen}
+            toggleNav={toggleNav}
+            name="Edward 'Eddie' Jostell"
+          />
+          <Container>
+            <Route exact path="/" component={Home} />
+            <Route path="/About" render={() => <About />} />
+            <Route
+              path="/Portfolio"
+              render={() => <Portfolio data={portCont} />}
+            />
+            <Route path="/Contact" render={() => <Contact />} />
+          </Container>
+        </div>
+      </Router>
+    </QuoteProvider>
+  );
+}
+
+export default App; */
+
 export default class App extends React.Component<State> {
   state: State = {
     navIsOpen: false,
@@ -30,6 +72,7 @@ export default class App extends React.Component<State> {
   };
 
   toggleNav = (visible: boolean) => {
+    console.log(visible);
     this.setState({ navIsOpen: visible });
   };
 
@@ -39,10 +82,6 @@ export default class App extends React.Component<State> {
     const { quoteArr } = this.state;
 
     return (
-      /*    array.map(() => {
-        <Route />
-      }) */
-
       <QuoteProvider value={quoteArr}>
         <Router>
           <div className="App">
@@ -72,3 +111,8 @@ export default class App extends React.Component<State> {
 
 //https://coolors.co/f26326-000000-ffffff-4a5664-fc0000
 //https://coolors.co/a30002-000000-eaeaea-466365-274060
+
+//Använd för att lista ut components
+/*    array.map(() => {
+        <Route />
+      }) */
