@@ -16,11 +16,11 @@ const About = (props: IAboutProps) => {
   const [quoteList, setQuoteList] = useState(Quote);
   console.log("useState", quoteList);
 
-  /*   let robin: JSX.Element[] = quoteList.map((q: QuoteItem, key: any) => (
+  let robin: JSX.Element[] = quoteList.map((q: QuoteItem, key: any) => (
     <QuoteContent key={key} quote={q.quote} author={q.author} />
   ));
 
-  let hej: never[] = quoteList(Math.floor(Math.random() * quoteList.length));
+  /* let hej = quoteList(Math.floor(Math.random() * quoteList.length));
   console.log(hej); */
   return (
     <div className="About">

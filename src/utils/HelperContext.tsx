@@ -1,4 +1,5 @@
 import React, { createContext } from "react";
+import { QuoteInfo, QuoteItem } from "./portfolio";
 
 export interface IContextProps {
   state: IContextState;
@@ -17,7 +18,7 @@ export interface IContextState {
 
 //const quoteInformation: IContextState = {quoteItems: {id: }}
 
-export const QuoteContext = createContext([]);
+export const QuoteContext = createContext([] as QuoteItem[]);
 
 export const QuoteProvider = QuoteContext.Provider;
 
