@@ -16,12 +16,6 @@ import {
   QuoteInfo
 } from "./utils/portfolio";
 
-interface State {
-  navIsOpen: boolean;
-  portCont: PortfolioItem[];
-  quoteArr: QuoteItem[];
-}
-
 /* interface IAppProps {
   navIsOpen: boolean;
   portCont: PortfolioItem[];
@@ -30,12 +24,15 @@ interface State {
 
 function App(props: IAppProps) {
   const { navIsOpen, portCont, quoteList } = props;
-  const [stateNavIsOpen, setNavState] = useState(navIsOpen);
+  const [appState, setAppState] = useState<IAppProps>({
+    navIsOpen: false,
+    portCont: myProjects,
+    quoteList: QuoteInfo
+  });
 
   const toggleNav = () => {
-    console.log("Before", stateNavIsOpen);
-    setNavState(!stateNavIsOpen);
-    console.log("After", stateNavIsOpen);
+    console.log("123", portCont);
+    setAppState({ ...appState, navIsOpen: !appState.navIsOpen });
   };
 
   return (
@@ -43,7 +40,7 @@ function App(props: IAppProps) {
       <Router>
         <div className="App">
           <Navigation
-            navIsOpen={stateNavIsOpen}
+            navIsOpen={appState.navIsOpen}
             toggleNav={toggleNav}
             name="Edward 'Eddie' Jostell"
           />
@@ -63,6 +60,12 @@ function App(props: IAppProps) {
 }
 
 export default App; */
+
+interface State {
+  navIsOpen: boolean;
+  portCont: PortfolioItem[];
+  quoteArr: QuoteItem[];
+}
 
 export default class App extends React.Component<State> {
   state: State = {
