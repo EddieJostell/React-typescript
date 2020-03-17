@@ -1,9 +1,38 @@
-import * as React from "react";
+import React, { useState } from "react";
 import "./Portfolio.less";
 import PortfolioContent from "./PortfolioContent/PortfolioContent";
 import { PortfolioItem } from "../../utils/data";
 
-interface Props {
+interface IPortfolioProps {
+  data: PortfolioItem[];
+}
+
+const Portfolio = (props: IPortfolioProps) => {
+  const { data } = props;
+
+  const displayPortfolioData = () => {
+    return data.map((port, key) => (
+      <PortfolioContent
+        key={key}
+        title={port.title}
+        tech={port.tech}
+        link={port.link}
+        img={port.img}
+      />
+    ));
+  };
+
+  return (
+    <div className="Portfolio">
+      <h1>PROJECTS</h1>
+      <ul className="List">{displayPortfolioData()}</ul>
+    </div>
+  );
+};
+
+export default Portfolio;
+
+/* interface Props {
   data: PortfolioItem[];
 }
 
@@ -45,3 +74,4 @@ export default class Portfolio extends React.Component<Props, State> {
     );
   }
 }
+ */

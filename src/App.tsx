@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 import Container from "./components/Container/Container";
