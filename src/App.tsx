@@ -18,8 +18,8 @@ function App() {
     projectList
   });
 
-  const toggleNav = () => {
-    setAppState({ ...appState, navIsOpen: !appState.navIsOpen });
+  const toggleNav = (visible: boolean) => {
+    setAppState({ ...appState, navIsOpen: visible });
   };
 
   return (
