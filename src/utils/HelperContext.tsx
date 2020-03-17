@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import { QuoteInfo, QuoteItem } from "./portfolio";
+import { QuoteInfo, QuoteItem } from "./data";
 
 export interface IContextProps {
   state: IContextState;

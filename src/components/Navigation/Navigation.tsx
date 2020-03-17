@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navigation.less";
-import { runInThisContext } from "vm";
 
-interface Props {
+interface INavProps {
   name: string;
   navIsOpen: boolean;
   toggleNav: (visible: boolean) => void;
@@ -16,12 +15,12 @@ interface State {
   subnav: boolean;
 }
 
-export default class Navigation extends React.Component<Props, State> {
+export default class Navigation extends React.Component<INavProps, State> {
   static defaultProps = {
     status: "12315"
   };
 
-  constructor(props: Props) {
+  constructor(props: INavProps) {
     super(props);
 
     this.state = {

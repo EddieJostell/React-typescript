@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Portfolio.less";
 import PortfolioContent from "./PortfolioContent/PortfolioContent";
-import { PortfolioItem } from "../../utils/portfolio";
+import { PortfolioItem } from "../../utils/data";
 
 interface Props {
   data: PortfolioItem[];
@@ -16,7 +16,7 @@ export default class Portfolio extends React.Component<Props, State> {
     super(props);
 
     this.state = {
-      portArray: []
+      portArray: this.props.data
     };
   }
 
@@ -39,8 +39,8 @@ export default class Portfolio extends React.Component<Props, State> {
 
     return (
       <div className="Portfolio">
-        <h1>PROJECTS</h1>     
-          <ul className="List">{portfolio}</ul>       
+        <h1>PROJECTS</h1>
+        <ul className="List">{portfolio}</ul>
       </div>
     );
   }

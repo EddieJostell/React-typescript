@@ -9,34 +9,21 @@ import Portfolio from "./components/Portfolio/Portfolio";
 //import Route from "./utils/Route";
 import Contact from "./components/Contact/Contact";
 import { QuoteProvider } from "./utils/HelperContext";
-import {
-  myProjects,
-  PortfolioItem,
-  QuoteItem,
-  QuoteInfo
-} from "./utils/portfolio";
+import { projectList, PortfolioItem, QuoteItem, QuoteInfo } from "./utils/data";
 
-/* interface IAppProps {
-  navIsOpen: boolean;
-  portCont: PortfolioItem[];
-  quoteList: QuoteItem[];
-}
-
-function App(props: IAppProps) {
-  const { navIsOpen, portCont, quoteList } = props;
-  const [appState, setAppState] = useState<IAppProps>({
+function App() {
+  const [appState, setAppState] = useState({
     navIsOpen: false,
-    portCont: myProjects,
-    quoteList: QuoteInfo
+    quoteList: QuoteInfo,
+    projectList
   });
 
   const toggleNav = () => {
-    console.log("123", portCont);
     setAppState({ ...appState, navIsOpen: !appState.navIsOpen });
   };
 
   return (
-    <QuoteProvider value={quoteList}>
+    <QuoteProvider value={appState.quoteList}>
       <Router>
         <div className="App">
           <Navigation
@@ -49,7 +36,7 @@ function App(props: IAppProps) {
             <Route path="/About" render={() => <About />} />
             <Route
               path="/Portfolio"
-              render={() => <Portfolio data={portCont} />}
+              render={() => <Portfolio data={appState.projectList} />}
             />
             <Route path="/Contact" render={() => <Contact />} />
           </Container>
@@ -59,9 +46,9 @@ function App(props: IAppProps) {
   );
 }
 
-export default App; */
+export default App;
 
-interface State {
+/* interface State {
   navIsOpen: boolean;
   portCont: PortfolioItem[];
   quoteArr: QuoteItem[];
@@ -107,7 +94,7 @@ export default class App extends React.Component<State> {
       </QuoteProvider>
     );
   }
-}
+} */
 
 //https://coolors.co/000000-000a1c-13211a-44001d-ffffff
 //https://coolors.co/44355b-31263e-221e22-ff4b3e-eca72c

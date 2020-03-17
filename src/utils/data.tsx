@@ -6,7 +6,7 @@ export interface PortfolioItem {
   img: string;
 }
 
-export const myProjects: PortfolioItem[] = [
+export const projectList: PortfolioItem[] = [
   {
     id: 1,
     title: "COOP.se",

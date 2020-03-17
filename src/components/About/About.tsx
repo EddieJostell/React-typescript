@@ -3,7 +3,7 @@ import "./About.less";
 import { useContext, useState } from "react";
 import QuoteContext from "../../utils/HelperContext";
 import QuoteContent from "./QuoteContent/QuoteContent";
-import { QuoteItem } from "../../utils/portfolio";
+import { QuoteItem } from "../../utils/data";
 
 interface IAboutProps {}
 
