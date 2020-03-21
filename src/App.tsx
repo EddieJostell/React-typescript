@@ -8,14 +8,18 @@ import "./styles/app.less";
 import Portfolio from "./components/Portfolio/Portfolio";
 //import Route from "./utils/Route";
 import Contact from "./components/Contact/Contact";
-import { QuoteProvider } from "./utils/HelperContext";
-import { projectList, PortfolioItem, QuoteItem, QuoteInfo } from "./utils/data";
+import { HelperProvider, QuoteProvider } from "./utils/HelperContext";
+import { ProjectList, IQuoteItem, QuoteInfo } from "./utils/data";
+
+export interface IPropertyState {
+  quoteItem: IQuoteItem[];
+}
 
 function App() {
   const [appState, setAppState] = useState({
     navIsOpen: false,
     quoteList: QuoteInfo,
-    projectList
+    projectList: ProjectList
   });
 
   const toggleNav = (visible: boolean) => {
@@ -44,57 +48,33 @@ function App() {
       </Router>
     </QuoteProvider>
   );
+
+  // HelperProvider for the proper useContext...
+  /*   return (
+    <HelperProvider state={appState.quoteList}>
+      <Router>
+        <div className="App">
+          <Navigation
+            navIsOpen={appState.navIsOpen}
+            toggleNav={toggleNav}
+            name="Edward 'Eddie' Jostell"
+          />
+          <Container>
+            <Route exact path="/" component={Home} />
+            <Route path="/About" render={() => <About />} />
+            <Route
+              path="/Portfolio"
+              render={() => <Portfolio data={appState.projectList} />}
+            />
+            <Route path="/Contact" render={() => <Contact />} />
+          </Container>
+        </div>
+      </Router>
+    </HelperProvider>
+  ); */
 }
 
 export default App;
-
-/* interface State {
-  navIsOpen: boolean;
-  portCont: PortfolioItem[];
-  quoteArr: QuoteItem[];
-}
-
-export default class App extends React.Component<State> {
-  state: State = {
-    navIsOpen: false,
-    portCont: myProjects,
-    quoteArr: QuoteInfo
-  };
-
-  toggleNav = (visible: boolean) => {
-    console.log(visible);
-    this.setState({ navIsOpen: visible });
-  };
-
-  render() {
-    const { navIsOpen } = this.state;
-    const { portCont } = this.state;
-    const { quoteArr } = this.state;
-
-    return (
-      <QuoteProvider value={quoteArr}>
-        <Router>
-          <div className="App">
-            <Navigation
-              navIsOpen={navIsOpen}
-              toggleNav={this.toggleNav}
-              name="Edward 'Eddie' Jostell"
-            />
-            <Container>
-              <Route exact path="/" component={Home} />
-              <Route path="/About" render={() => <About />} />
-              <Route
-                path="/Portfolio"
-                render={() => <Portfolio data={portCont} />}
-              />
-              <Route path="/Contact" render={() => <Contact />} />
-            </Container>
-          </div>
-        </Router>
-      </QuoteProvider>
-    );
-  }
-} */
 
 //https://coolors.co/000000-000a1c-13211a-44001d-ffffff
 //https://coolors.co/44355b-31263e-221e22-ff4b3e-eca72c

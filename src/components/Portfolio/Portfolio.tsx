@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Portfolio.less";
 import PortfolioContent from "./PortfolioContent/PortfolioContent";
-import { PortfolioItem } from "../../utils/data";
+import { IPortfolioItem } from "../../utils/data";
 
 interface IPortfolioProps {
-  data: PortfolioItem[];
+  data: IPortfolioItem[];
 }
 
 const Portfolio = (props: IPortfolioProps) => {

@@ -1,4 +1,4 @@
-export interface PortfolioItem {
+export interface IPortfolioItem {
   id: number;
   title: string;
   tech: string;
@@ -6,7 +6,7 @@ export interface PortfolioItem {
   img: string;
 }
 
-export const projectList: PortfolioItem[] = [
+export const ProjectList: IPortfolioItem[] = [
   {
     id: 1,
     title: "COOP.se",
@@ -51,13 +51,13 @@ export const projectList: PortfolioItem[] = [
   }
 ];
 
-export interface QuoteItem {
+export interface IQuoteItem {
   id: number;
   quote: string;
   author: string;
 }
 
-export const QuoteInfo: QuoteItem[] = [
+export const QuoteInfo: IQuoteItem[] = [
   {
     id: 1,
     quote:

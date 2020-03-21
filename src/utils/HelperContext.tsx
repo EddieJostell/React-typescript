@@ -1,24 +1,36 @@
-import React, { createContext } from "react";
-import { QuoteInfo, QuoteItem } from "./data";
+import React, { ReactNode, createContext } from "react";
+import { QuoteInfo, IQuoteItem } from "./data";
 
-export interface IContextProps {
+//Trying to sort a proper Context...
+
+/* export interface IContextProps {
   state: IContextState;
-  children?: React.ReactNode;
-}
-
-export interface IQuoteValues {
-  id: number;
-  quote: string;
-  author: string;
+  children?: ReactNode;
 }
 
 export interface IContextState {
-  quoteItem?: IQuoteValues | never[];
+  quoteItem?: IQuoteItem | never[];
 }
 
-//const quoteInformation: IContextState = {quoteItems: {id: }}
+const HelperCtx: IContextState = { quoteItem: [] };
 
-export const QuoteContext = createContext([] as QuoteItem[]);
+const HelperContext = React.createContext(HelperCtx);
+
+const HelperProvider = (props: IContextProps) => {
+  const { state, children } = props;
+
+  return (
+    <HelperContext.Provider value={state}>{children}</HelperContext.Provider>
+  );
+};
+
+export { HelperContext, HelperProvider }; */
+
+export interface IContextState {
+  quoteItem?: IQuoteItem | never[];
+}
+
+export const QuoteContext = createContext([] as IQuoteItem[]);
 
 export const QuoteProvider = QuoteContext.Provider;
 
