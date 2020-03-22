@@ -67,7 +67,7 @@ export const QuoteInfo: IQuoteItem[] = [
   {
     id: 2,
     quote:
-      "Reality can never live up to that fantasy that you have in your head. You'll be much happier if you accept the fact that real life is never perfect",
+      "Reality can never live up to that fantasy that you have in your head. You'll be much happier if you accept the fact that real life is never perfect.",
     author: "Unknown"
   },
   {

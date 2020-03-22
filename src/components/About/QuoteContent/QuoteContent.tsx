@@ -1,5 +1,5 @@
-import * as React from "react";
-import "../../About/About.less";
+import * as React from 'react';
+import './QuoteContent.less';
 
 interface Props {
   quote: string;
@@ -8,9 +8,12 @@ interface Props {
 
 const QuoteContent = (props: Props) => {
   return (
-    <div>
-      <span>{props.quote}</span>
-      <span>{props.author}</span>
+    <div className="QuoteContent">
+      <h2>Quote</h2>
+      <span>
+        <i>{props.quote}</i>
+      </span>
+      <span>- {props.author}</span>
     </div>
   );
 };
