@@ -20,12 +20,9 @@ const About = (props: IAboutProps) => {
         <span className="intro">
           Hello! My name is Eddie and I am a Frontend-developer.
         </span>
-        <span className="quote">
-          "My family is everything. I am what I am thanks to my mother, my
-          father, my brother, my sister... because they have given me
-          everything. The education I have is thanks to them."
-        </span>
-        <span className="quote">- Ronaldinho.</span>
+        {/*  <span className="quote">
+        </span> */}
+        <QuoteContent quote={quotes.quote} author={quotes.author} />
       </div>
 
       <div className="Bot">
@@ -53,9 +50,6 @@ const About = (props: IAboutProps) => {
             Offensive. Even tho I dont play on that level anymore I still dream
             of a comeback, who knows, like J.B says "Never say never!".
           </div>
-        </div>
-        <div className="Bot-box">
-          <QuoteContent quote={quotes.quote} author={quotes.author} />
         </div>
       </div>
     </div>

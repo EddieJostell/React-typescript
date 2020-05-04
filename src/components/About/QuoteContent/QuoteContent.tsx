@@ -9,7 +9,7 @@ interface Props {
 const QuoteContent = (props: Props) => {
   return (
     <div className="QuoteContent">
-      <h2>Quote</h2>
+      {/* <h2>Quote</h2> */}
       <span>
         <i>{props.quote}</i>
       </span>
