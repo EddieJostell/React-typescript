@@ -36,7 +36,7 @@ const About = (props: IAboutProps) => {
         <div className="Bot-box">
           <h2>Likes</h2>
           <div>
-            When Im not hitting the keyboard to make webdevelopment magic or
+            When Im not hitting the keyboard to create magic on the web or
             playing games I like to hang out with my friends, go to the gym,
             long walks, relax with movies/tvshows or just listening to good
             music.
