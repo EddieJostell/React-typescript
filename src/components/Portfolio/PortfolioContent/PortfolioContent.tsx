@@ -1,31 +1,34 @@
-import * as React from "react";
-import "../../Portfolio/Portfolio.less";
+import * as React from 'react';
+import '../../Portfolio/Portfolio.less';
 
 interface Props {
   link: string;
   img: string;
   title: string;
   tech: string;
+  text: string;
 }
 
 const PortfolioContent = (props: Props) => {
+  const { link, img, title, tech, text } = props;
+
   return (
     <li className="List-card">
       <div className="List-cardImg">
-        <h3 className="title">{props.title}</h3>
-        <a href={props.link} target="_blank">
-          <img src={props.img} />
+        <a href={link} target="_blank">
+          <img src={img} />
         </a>
       </div>
       <div className="List-cardContent">
-        <h3 className="title">{props.title}</h3>
-        <span>{props.tech}</span>
-        <a href={props.link} target="_blank">
-          <div>{props.link}</div>
+        <h3 className="title">{title}</h3>
+        <span>{tech}</span>
+        <a href={link} target="_blank">
+          <div>{link}</div>
         </a>
+        <p>{text}</p>
       </div>
     </li>
   );
-}
+};
 
 export default PortfolioContent;

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "./Portfolio.less";
-import PortfolioContent from "./PortfolioContent/PortfolioContent";
-import { IPortfolioItem } from "../../utils/data";
+import React from 'react';
+import './Portfolio.less';
+import PortfolioContent from './PortfolioContent/PortfolioContent';
+import { IPortfolioItem } from '../../utils/data';
 
 interface IPortfolioProps {
   data: IPortfolioItem[];
@@ -18,6 +18,7 @@ const Portfolio = (props: IPortfolioProps) => {
         tech={port.tech}
         link={port.link}
         img={port.img}
+        text={port.text}
       />
     ));
   };

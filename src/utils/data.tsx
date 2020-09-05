@@ -4,6 +4,7 @@ export interface IPortfolioItem {
   tech: string;
   link: string;
   img: string;
+  text: string;
 }
 
 export const ProjectList: IPortfolioItem[] = [
@@ -13,6 +14,8 @@ export const ProjectList: IPortfolioItem[] = [
     tech: '#HTML #CSS/LESS #jQuery #TypeScript #ASP.NET/MVC #EPiServer',
     link: 'https://www.coop.se',
     img: 'img/coop.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   },
   {
     id: 2,
@@ -20,6 +23,8 @@ export const ProjectList: IPortfolioItem[] = [
     tech: '#HTML #CSS/SASS #JavaScript/jQuery #AJAX',
     link: 'https://eddiejostell.github.io/Cloud9-Reborn/',
     img: 'img/cloud9.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   },
   {
     id: 3,
@@ -27,6 +32,8 @@ export const ProjectList: IPortfolioItem[] = [
     tech: '#HTML #CSS/SASS #JavaScript/jQuery #AJAX',
     link: 'https://eddiejostell.github.io/News-Hub/',
     img: 'img/news-hub.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   },
   {
     id: 4,
@@ -34,6 +41,8 @@ export const ProjectList: IPortfolioItem[] = [
     tech: '#HTML #CSS/SASS #JavaScript',
     link: 'https://eddiejostell.github.io/MovieDatabase/',
     img: 'img/moviedatabase.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   },
   {
     id: 5,
@@ -41,6 +50,8 @@ export const ProjectList: IPortfolioItem[] = [
     tech: '#HTML #CSS #JavaScript',
     link: 'https://eddiejostell.github.io/todo-app/',
     img: 'img/todo.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   },
   {
     id: 6,
@@ -48,6 +59,8 @@ export const ProjectList: IPortfolioItem[] = [
     tech: '#HTML #CSS #JavaScript',
     link: 'https://eddiejostell.github.io/food-app/',
     img: 'img/food-app.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   },
 ];
 
