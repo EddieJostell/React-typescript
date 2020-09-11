@@ -15,7 +15,7 @@ export const ProjectList: IPortfolioItem[] = [
     link: 'https://www.coop.se',
     img: 'img/coop.JPG',
     text:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const ProjectList: IPortfolioItem[] = [
     link: 'https://eddiejostell.github.io/Cloud9-Reborn/',
     img: 'img/cloud9.JPG',
     text:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const ProjectList: IPortfolioItem[] = [
     link: 'https://eddiejostell.github.io/News-Hub/',
     img: 'img/news-hub.JPG',
     text:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const ProjectList: IPortfolioItem[] = [
     link: 'https://eddiejostell.github.io/MovieDatabase/',
     img: 'img/moviedatabase.JPG',
     text:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ export const ProjectList: IPortfolioItem[] = [
     link: 'https://eddiejostell.github.io/todo-app/',
     img: 'img/todo.JPG',
     text:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 6,
@@ -60,8 +60,62 @@ export const ProjectList: IPortfolioItem[] = [
     link: 'https://eddiejostell.github.io/food-app/',
     img: 'img/food-app.JPG',
     text:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
+  /*   {
+    id: 7,
+    title: 'COOP.se',
+    tech: '#HTML #CSS/LESS #jQuery #TypeScript #ASP.NET/MVC #EPiServer',
+    link: 'https://www.coop.se',
+    img: 'img/coop.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 8,
+    title: 'Cloud9 Reborn',
+    tech: '#HTML #CSS/SASS #JavaScript/jQuery #AJAX',
+    link: 'https://eddiejostell.github.io/Cloud9-Reborn/',
+    img: 'img/cloud9.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 9,
+    title: 'News Hub',
+    tech: '#HTML #CSS/SASS #JavaScript/jQuery #AJAX',
+    link: 'https://eddiejostell.github.io/News-Hub/',
+    img: 'img/news-hub.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 10,
+    title: 'MovieDatabase',
+    tech: '#HTML #CSS/SASS #JavaScript',
+    link: 'https://eddiejostell.github.io/MovieDatabase/',
+    img: 'img/moviedatabase.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 11,
+    title: 'TODO-APP',
+    tech: '#HTML #CSS #JavaScript',
+    link: 'https://eddiejostell.github.io/todo-app/',
+    img: 'img/todo.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 12,
+    title: 'FOOD-APP',
+    tech: '#HTML #CSS #JavaScript',
+    link: 'https://eddiejostell.github.io/food-app/',
+    img: 'img/food-app.JPG',
+    text:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  }, */
 ];
 
 export interface IQuoteItem {

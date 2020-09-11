@@ -2,7 +2,6 @@ import React from 'react';
 import './Portfolio.less';
 import { IPortfolioItem } from '../../utils/data';
 import GridList from '@material-ui/core/GridList';
-import { GridListTile, GridListTileBar } from '@material-ui/core';
 import PortfolioContent from './PortfolioContent/PortfolioContent';
 interface IPortfolioProps {
   data: IPortfolioItem[];
@@ -42,10 +41,11 @@ const Portfolio = (props: IPortfolioProps) => {
   return (
     <div className="Portfolio">
       <h1>PROJECTS</h1>
-      <ul className="List">{displayPortfolioData()}</ul>
-      {/*  <GridList cellHeight={260} cols={3}>
+      {/* <ul className="List">{displayPortfolioData()}</ul> */}
+      <GridList className="List" cellHeight={260} cols={4}>
         {displayPortfolioData()}
-      </GridList> */}
+      </GridList>
+      {/* <div className="List">{displayPortfolioData()}</div> */}
     </div>
   );
 };
