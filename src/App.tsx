@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Navigation from "./components/Navigation/Navigation";
-import Container from "./components/Container/Container";
-import About from "./components/About/About";
-import Home from "./components/Home/Home";
-import "./styles/app.less";
-import Portfolio from "./components/Portfolio/Portfolio";
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Navigation from './components/Navigation/Navigation';
+import Container from './components/Container/Container';
+import About from './components/About/About';
+import Home from './components/Home/Home';
+import './styles/app.less';
+import Portfolio from './components/Portfolio/Portfolio';
 //import Route from "./utils/Route";
-import Contact from "./components/Contact/Contact";
-import { HelperProvider, QuoteProvider } from "./utils/HelperContext";
-import { ProjectList, IQuoteItem, QuoteInfo } from "./utils/data";
+import Contact from './components/Contact/Contact';
+import { HelperProvider, QuoteProvider } from './utils/HelperContext';
+import { ProjectList, IQuoteItem, QuoteInfo } from './utils/data';
 
 export interface IPropertyState {
   quoteItem: IQuoteItem[];
@@ -19,7 +19,7 @@ function App() {
   const [appState, setAppState] = useState({
     navIsOpen: false,
     quoteList: QuoteInfo,
-    projectList: ProjectList
+    projectList: ProjectList,
   });
 
   const toggleNav = (visible: boolean) => {
@@ -36,8 +36,8 @@ function App() {
             name="Edward 'Eddie' Jostell"
           />
           <Container>
-            <Route exact path="/" component={Home} />
-            <Route path="/About" render={() => <About />} />
+            <Route exact path="/" component={About} />
+            {/* <Route path="/About" render={() => <About />} /> */}
             <Route
               path="/Portfolio"
               render={() => <Portfolio data={appState.projectList} />}

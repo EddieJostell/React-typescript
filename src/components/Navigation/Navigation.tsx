@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Navigation.less";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navigation.less';
 
 interface INavProps {
   name: string;
@@ -10,7 +10,7 @@ interface INavProps {
 }
 
 const defaultProps: Partial<INavProps> = {
-  status: "12315"
+  status: '12315',
 };
 
 const Navigation = (props: INavProps) => {
@@ -36,28 +36,28 @@ const Navigation = (props: INavProps) => {
       {navIsOpen && (
         <div className="Navbar-subnav">
           <div className="Navbar-subnavItems">
-            <li>
+            {/* <li>
               <Link to={"/"} onClick={() => toggleNav(false)}>
                 {" "}
                 HOME{" "}
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link to={"/About"} onClick={() => toggleNav(false)}>
-                {" "}
-                ABOUT{" "}
+              <Link to={'/About'} onClick={() => toggleNav(false)}>
+                {' '}
+                ABOUT{' '}
               </Link>
             </li>
             <li>
-              <Link to={"/Portfolio"} onClick={() => toggleNav(false)}>
-                {" "}
-                PORTFOLIO{" "}
+              <Link to={'/Portfolio'} onClick={() => toggleNav(false)}>
+                {' '}
+                PORTFOLIO{' '}
               </Link>
             </li>
             <li>
-              <Link to={"/Contact"} onClick={() => toggleNav(false)}>
-                {" "}
-                CONTACT{" "}
+              <Link to={'/Contact'} onClick={() => toggleNav(false)}>
+                {' '}
+                CONTACT{' '}
               </Link>
             </li>
           </div>

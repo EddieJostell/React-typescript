@@ -20,19 +20,10 @@ const About = (props: IAboutProps) => {
         <span className="intro">
           Hello! My name is Eddie and I am a Frontend-developer.
         </span>
-        {/*  <span className="quote">
-        </span> */}
         <QuoteContent quote={quotes.quote} author={quotes.author} />
       </div>
 
       <div className="Bot">
-        <div className="Bot-box">
-          <h2>Me</h2>
-          <div>Name: Edward 'Eddie' Jostell.</div>
-          <div>Age: 32 summers.</div>
-          <div>From: Stockholm, Sweden.</div>
-          <div>Occupation: Frontend-developer.</div>
-        </div>
         <div className="Bot-box">
           <h2>Likes</h2>
           <div>
@@ -43,12 +34,19 @@ const About = (props: IAboutProps) => {
           </div>
         </div>
         <div className="Bot-box">
+          <h2>Me</h2>
+          <div>Name: Edward 'Eddie' Jostell.</div>
+          <div>Age: 32 summers.</div>
+          <div>From: Stockholm, Sweden.</div>
+          <div>Occupation: Frontend-developer.</div>
+        </div>
+        <div className="Bot-box">
           <h2>Gamer</h2>
           <div>
             Before I wanted to become a web-developer I played at a
             semi-professional level in the computer game Counter Strike - Global
             Offensive. Even tho I dont play on that level anymore I still dream
-            of a comeback, who knows, like J.B says "Never say never!".
+            of a comeback.
           </div>
         </div>
       </div>
