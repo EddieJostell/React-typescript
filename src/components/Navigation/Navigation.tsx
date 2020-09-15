@@ -43,7 +43,7 @@ const Navigation = (props: INavProps) => {
               </Link>
             </li> */}
             <li>
-              <Link to={'/About'} onClick={() => toggleNav(false)}>
+              <Link to={'/'} onClick={() => toggleNav(false)}>
                 {' '}
                 ABOUT{' '}
               </Link>
