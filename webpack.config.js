@@ -1,21 +1,21 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const env = process.env.NODE_ENV;
-var path = require("path");
+var path = require('path');
 var config = {
-  mode: "production",
-  entry: ["@babel/polyfill", "./app.tsx"],
+  mode: 'production',
+  entry: ['@babel/polyfill', './app.tsx'],
   output: {
-    path: path.resolve(__dirname, "build"),
-    filename: "bundle.js",
-    publicPath: "/"
+    path: path.resolve(__dirname, 'build'),
+    filename: 'bundle.js',
+    publicPath: '/',
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", "json", "wasm"]
+    extensions: ['.ts', '.tsx', '.js', 'json', 'wasm'],
   },
 
   devServer: {
-    port: 3000,
-    historyApiFallback: true
+    port: 3001,
+    historyApiFallback: true,
   },
   plugins: [new MiniCssExtractPlugin()],
   module: {
@@ -24,46 +24,46 @@ var config = {
         test: /\.(ts|tsx)?$/,
         exclude: /(node_modules)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             presets: [
-              "@babel/preset-env",
-              "@babel/preset-typescript",
-              "@babel/preset-react"
-            ]
-          }
-        }
+              '@babel/preset-env',
+              '@babel/preset-typescript',
+              '@babel/preset-react',
+            ],
+          },
+        },
       },
       {
         test: /\.less$/,
         use: [
           {
             loader:
-              env == "development"
-                ? "style-loader"
+              env == 'development'
+                ? 'style-loader'
                 : MiniCssExtractPlugin.loader,
-            options: { sourceMap: true, filename: "main.css" }
+            options: { sourceMap: true, filename: 'main.css' },
           },
           {
-            loader: "css-loader",
-            options: { sourceMap: true, importLoaders: 1 }
+            loader: 'css-loader',
+            options: { sourceMap: true, importLoaders: 1 },
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              config: { path: __dirname + "/postcss.config.js" }
-            }
+              config: { path: __dirname + '/postcss.config.js' },
+            },
           },
-          { loader: "less-loader", options: { sourceMap: true } }
-        ]
+          { loader: 'less-loader', options: { sourceMap: true } },
+        ],
       },
       {
         test: /\.(jp(e?)g|png|svg)$/,
-        use: "url-loader"
-      }
-    ]
-  }
+        use: 'url-loader',
+      },
+    ],
+  },
 };
 
 module.exports = config;
